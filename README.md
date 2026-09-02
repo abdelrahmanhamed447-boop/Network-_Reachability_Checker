@@ -35,7 +35,7 @@ The selected path is based on the configured network topology and link costs.
 ## Project Files
 
 - `network_reachability_checker.py` – Python source code.
-- `Network_Reachability_Checker.pdf` – Project documentation and code screenshots.
+- `Network _Reachability_Checker.pdf` – Project documentation and code screenshots.
 
 ## Skills Demonstrated
 
@@ -51,4 +51,4 @@ The selected path is based on the configured network topology and link costs.
 
 Detailed project documentation, implementation details, and code screenshots are available in the project PDF:
 
-**[Network Reachability Checker Documentation](./Network_Reachability_Checker.pdf)**
+**[Network Reachability Checker Documentation](./Network%20_Reachability_Checker.pdf)**
