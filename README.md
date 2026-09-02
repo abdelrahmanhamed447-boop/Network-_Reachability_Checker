@@ -32,7 +32,6 @@ The project calculates the lowest-cost path from:
 
 The selected path is based on the configured network topology and link costs.
 
-## Project Files
 
 ## Project Files
 
