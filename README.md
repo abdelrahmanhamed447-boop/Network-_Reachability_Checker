@@ -11,8 +11,9 @@ The project models a network topology consisting of routers with weighted links 
 ## 📑 Table of Contents
 
 - [📌 Overview](#-overview)
+- [📑 Table of Contents](#-table-of-contents)
 - [🎯 Project Objectives](#-project-objectives)
-- [🛠️ Technologies & Concepts](#-technologies--concepts)
+- [🛠️ Technologies & Concepts](#️-technologies--concepts)
 - [🔄 Project Workflow](#-project-workflow)
   - [Network Topology](#network-topology)
   - [Dijkstra's Algorithm](#dijkstras-algorithm)
@@ -74,9 +75,7 @@ Each connection between routers has an associated cost.
 
 The project implements Dijkstra's algorithm to calculate the shortest path between the selected source and destination routers.
 
-The algorithm initializes the distance to the source router as zero and the distances to the remaining routers as infinity.
-
-It then evaluates neighboring routers and updates their distances when a lower-cost path is found.
+The algorithm evaluates the available paths and determines the lowest-cost route through the network topology.
 
 ---
 
@@ -84,7 +83,7 @@ It then evaluates neighboring routers and updates their distances when a lower-c
 
 Python's `heapq` module is used to implement a priority queue.
 
-The priority queue allows the algorithm to process the router with the lowest current path cost first.
+The priority queue allows the algorithm to process routers based on their current path cost.
 
 ---
 
@@ -103,37 +102,21 @@ calculates the lowest cost between the selected routers.
 
 The project uses a network topology represented as a weighted graph.
 
-network_topology = {
-    "Router_A": {"Router_B": 10, "Router_C": 2},
-    "Router_B": {"Router_D": 5},
-    "Router_C": {"Router_B": 3, "Router_D": 15},
-    "Router_D": {}
-}
+The topology contains routers connected through links with different costs.
 
-The configured source router is:
+The source and destination routers are selected for the shortest-path calculation.
 
-start = "Router_A"
+The Dijkstra-based path calculation processes the topology and determines the lowest-cost route between the selected routers.
 
-The destination router is:
+The implementation uses Python's heapq module as a priority queue for processing the available paths.
 
-destination = "Router_D"
-
-The calculated result is stored using:
-
-best_cost = calculate_ospf_path(
-    network_topology,
-    start,
-    destination
-)
 🧪 Execution & Validation
 
 The project was executed successfully in Python.
 
-The documented execution calculates the path cost between:
+The documented execution calculates the path cost between the selected source and destination routers.
 
-Router_A → Router_D
-
-The program returns the calculated lowest path cost and completes successfully.
+The program processes the configured topology and returns the calculated lowest-cost path.
 
 The project documentation provides screenshots showing:
 
@@ -157,9 +140,9 @@ Priority Queue Implementation
 heapq Usage
 📸 Documentation
 
-The project documentation contains screenshots of the Python implementation and execution.
+The project documentation contains screenshots showing the Python implementation and execution of the Network Reachability Checker.
 
-The documentation demonstrates the network topology, weighted router connections, shortest-path calculation, and resulting program output.
+The documentation demonstrates the configured network topology, weighted router connections, shortest-path calculation, and program output.
 
 📁 Project Structure
 Network-Reachability-Checker/
@@ -169,6 +152,6 @@ Network-Reachability-Checker/
 └── Network _Reachability_Checker.pdf
 ⭐ Project Summary
 
-This project demonstrates the implementation of a Python-based shortest-path calculation for a simulated network topology.
+This project demonstrates the implementation of a Python-based network reachability checker using Dijkstra's algorithm to calculate the lowest-cost path through a simulated router topology.
 
-Using Dijkstra's algorithm and a priority queue, the project calculates the lowest-cost path between routers and provides a practical simulation of OSPF path calculation.
+The project provides a practical simulation of OSPF shortest-path calculation using weighted network links and a priority queue.
